@@ -1,3 +1,9 @@
-//Clacula los años bisiestos que habra desde ahora y antes de 2150
-//¿Cuantas cartas con numero par y ngras hay en una baraja de poker?
-//Eliminar 6 cartas de la baraja al azar y calcular en promedio (haciendo 1000 iteraciones) cuanto valen las cartas (con numero) que quedan.
+//Calcula los años bisiestos que habra desde ahora y antes de 2150
+
+for (let i = 2022; i <= 2150; i++){
+    if(i % 4 == 0){
+        console.log(i);
+    };
+}
+
+
