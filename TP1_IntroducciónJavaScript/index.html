@@ -7,49 +7,29 @@
 <body>    
     <div style="width: 100%; display: grid; place-items: center;">
         <div style="border: 2px solid #444; width: 60%; background-color: white; padding: 40px; border-radius: 8px;">
-            <h2 class="text-center">Valoracion</h2>
-            <form method="post" action='' id = "">
+            <h2>Notas</h2>
                 <div>
-                    <label><strong>Ingrese nota de matematica</strong></label>
-                    <input 
+                    
+                    <label for="Nombre">Ingrese nota de matematica</label>
+                    <input type="number" name="Matematica" id="matematica" required/> 
+                    <br>
+    
+                    <label for="Descripcion">Ingrese nota de lengua</label>
+                    <input type="number" name="Lengua" id="lengua" required />
+                    <br>
+    
+                    <label for="Imagen">Ingrese nota de EFSI</label>
+                    <input type="number" name="EFSI" id="EFSI" required />
+                    <br>
+    
+                    <button class="btn btn-primary" onclick="ValidarNota()">Enviar</button>
+                    
 
-                        id="matematica"
-                        type="number"
-                        required
-                        class="form-control mb-2"
+                    <h5>Promedio:</h5>
 
-                    />
                 </div>
-                <div>
-                    <label><strong>Ingrese nota de lengua</strong></label>
-                    <input 
-
-                        id="lengua"
-                        type="number"
-                        required
-                        class="form-control mb-2"
-
-                    />
-                </div>
-                <div>
-                    <label><strong>Ingrese nota de EFSI</strong></label>
-                    <input 
-
-                        id="EFSI"
-                        type="number"
-                        required
-                        class="form-control mb-2"
-
-                    />
-                </div>
-                <button class="btn btn-dark" type="submit">Enviar</button>
-            </form>
-
-                <h5 id="valoracion1" >Valoracion matematica:</h5>
-                <h5 id="valoracion2" >Valoracion lengua:</h5>
-                <h5 id="valoracion3" >Valoracion EFSI:</h5>
-
         </div>
-    </div> 
+    </div>
+    <script src="validacion.js"></script>
 </body>
 </html>
