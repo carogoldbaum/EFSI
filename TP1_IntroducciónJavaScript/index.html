@@ -1,35 +1,33 @@
 <html>
-<head>
-    <title>Valoraciones</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <head>
 
-<body>    
-    <div style="width: 100%; display: grid; place-items: center;">
-        <div style="border: 2px solid #444; width: 60%; background-color: white; padding: 40px; border-radius: 8px;">
-            <h2>Notas</h2>
-                <div>
-                    
-                    <label for="Nombre">Ingrese nota de matematica</label>
-                    <input type="number" name="Matematica" id="matematica" required/> 
-                    <br>
-    
-                    <label for="Descripcion">Ingrese nota de lengua</label>
-                    <input type="number" name="Lengua" id="lengua" required />
-                    <br>
-    
-                    <label for="Imagen">Ingrese nota de EFSI</label>
-                    <input type="number" name="EFSI" id="EFSI" required />
-                    <br>
-    
-                    <button class="btn btn-primary" onclick="ValidarNota()">Enviar</button>
-                    
+    </head>
+    <body>
 
-                    <h5>Promedio:</h5>
+        <label >Ingrese nota de matematica</label>
+        <input type="text" name="Matematica" id="matematica" onkeyup="ValidarNota()" required/> 
+        <br>
 
-                </div>
-        </div>
-    </div>
-    <script src="validacion.js"></script>
-</body>
+        <label >Ingrese nota de lengua</label>
+        <input type="text" name="Lengua" id="lengua" onkeyup="ValidarNota()" required/>
+        <br>
+
+        <label >Ingrese nota de EFSI</label>
+        <input type="text" name="EFSI" id="EFSI" onkeyup="ValidarNota()" required/>
+        
+        <br>
+
+        <button class="btn btn-primary" onclick="Promedio()">Calcular Promedio</button>
+        <button class="btn btn-primary" onclick="MayorNota()">Mayor Nota</button>
+
+        <div>
+            <h3>
+            Promedio: <span id="Promedio"></span><br/>
+            Materia con mayor nota: <span id="MayorNota"></span>
+            </h3>
+        </div> 
+        
+        <script src="validacion.js"></script>
+        
+    </body>
 </html>
