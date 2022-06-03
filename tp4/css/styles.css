@@ -5,6 +5,17 @@
     background-color: #CFD8DC;
 }
 
-#imgNavar {
+.carousel.pointer-event {
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+}
 
+.carousel {
+    position: relative;
+}
+
+.rectangulo{
+    width: 100%; 
+    height: 10px; 
+    background: #adc9d2;
 }
