@@ -1,8 +1,6 @@
 #footer {
-    font-size: smaller;
-   
-    font-family:Courier New, Courier, monospace;
-    background-color: #CFD8DC;
+    
+    background-color: #282525;
 }
 
 .carousel.pointer-event {
@@ -18,4 +16,41 @@
     width: 100%; 
     height: 10px; 
     background: #adc9d2;
+}
+
+.cardMod{
+    text-align: center;
+    border: 3px solid #adc9d2;
+    cursor: pointer;
+}
+
+.imgCard{
+    margin: 0.8rem;
+}
+
+.card:hover{
+    background-color:#adc9d2;
+}
+
+.imgfooter{
+    padding-top: 0.8rem;
+    padding-bottom: 1rem;
+}
+
+#centrofooter{
+    color:white;
+    margin-top: 2rem;
+    
+}
+
+.foot{
+    color: white;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+}
+
+.celular{
+    color:rgb(63, 145, 207);
+    -webkit-text-stroke: 0.2px ;
+    margin-top: 5rem;
 }
