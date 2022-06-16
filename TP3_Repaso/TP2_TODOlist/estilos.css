@@ -1,0 +1,89 @@
+  /* Saca los margenes y los puntos de las tareas */
+  ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Afecta a los items de la lista, las tareas */
+  ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+  }
+  
+  /* Cuando apretas en la tarea cambia el fondo y el texto */
+  ul li.checked {
+    background: #888;
+    color: #fff;
+    text-decoration: line-through;
+  }
+  
+  /* Agrega una linea cuando apretas en la tarea*/
+  ul li.checked::before {
+    content: '';
+    position: absolute;
+    border-color: #fff;
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    top: 10px;
+    left: 16px;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+  }
+  
+  /* Afecta al boton para eliminar todo*/
+  .eliminar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 12px 16px 12px 16px;
+  }
+  
+  .eliminar:hover {
+    background-color: #17a31e ;
+    color: white;
+  }
+  
+  /* Afecta el header */
+  .header {
+    background-color: #17a31e;
+    padding: 30px 130px;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Agrega color abajo del input */
+  .header:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Afecta la barra para ingresar tareas */
+  input {
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 15px;
+  }
+  
+  /* Afecta al boton Add */
+  .Botones {
+    padding: 10px;
+    width: 10%;
+    background: #d9d9d9;
+    color: #555;
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+  }
