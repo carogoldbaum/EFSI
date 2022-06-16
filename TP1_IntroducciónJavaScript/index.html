@@ -1,0 +1,33 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+
+        <label >Ingrese nota de matematica</label>
+        <input type="text" name="Matematica" id="matematica" onkeyup="ValidarNota()" required/> 
+        <br>
+
+        <label >Ingrese nota de lengua</label>
+        <input type="text" name="Lengua" id="lengua" onkeyup="ValidarNota()" required/>
+        <br>
+
+        <label >Ingrese nota de EFSI</label>
+        <input type="text" name="EFSI" id="EFSI" onkeyup="ValidarNota()" required/>
+        
+        <br>
+
+        <button class="btn btn-primary" onclick="Promedio()">Calcular Promedio</button>
+        <button class="btn btn-primary" onclick="MayorNota()">Mayor Nota</button>
+
+        <div>
+            <h3>
+            Promedio: <span id="Promedio"></span><br/>
+            Materia con mayor nota: <span id="MayorNota"></span>
+            </h3>
+        </div> 
+        
+        <script src="validacion.js"></script>
+        
+    </body>
+</html>
