@@ -10,7 +10,7 @@ function NavbarCasero() {
                 <Nav className="me-auto">
                     <Nav.Link href="/estadistica">Estadistica</Nav.Link>
                     <Nav.Link href="/contacto">Contacto</Nav.Link>
-                    <Nav.Link href="/home">Home</Nav.Link>
+                    <Nav.Link href="/">Home</Nav.Link>
                 </Nav>
             </Container>
         </Navbar>

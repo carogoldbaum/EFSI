@@ -48,6 +48,7 @@ const Personas = [
     "email":"dsporner6@gnu.org",
     "edad":"65"
   },
+
   {
     "id":"8",
     "nombre":"Dinny",
@@ -130,7 +131,7 @@ const Personas = [
     "nombre":"Derry",
     "apellido":"Currer",
     "email":"dcurreri@so-net.ne.jp",
-    "ed ad":"44"
+    "edad":"44"
   },
   {
     "id":"20",
@@ -419,5 +420,20 @@ const Personas = [
     "email":"rkilmary1n@businessinsider.com",
     "edad":"48"
   },
+  {
+    "id":"61",
+    "nombre":"fdgyd",
+    "apellido":"Kilmary",
+    "email":"rkilmary1n@businessinsider.com",
+    "edad":"65"
+  },
+  {
+    "id":"62",
+    "nombre":"caeroooooo",
+    "apellido":"Kilmary",
+    "email":"rkilmary1n@businessinsider.com",
+    "edad":"19"
+  },
+  
 ];
 export default Personas
