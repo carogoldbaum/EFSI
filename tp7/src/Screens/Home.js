@@ -1,5 +1,6 @@
 import NavbarCasero from "../Components/NavbarCasero"
 import CarouselCasero from "../Components/CarouselCasero"
+import Productos from "../Components/Productos"
 import FooterCasero from "../Components/FooterCasero";
 
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
         <>
             <NavbarCasero></NavbarCasero>
             <CarouselCasero></CarouselCasero>
+            <Productos></Productos>
             <FooterCasero></FooterCasero>
         </>
     );
