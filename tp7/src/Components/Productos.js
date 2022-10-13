@@ -1,7 +1,7 @@
 import React, { Component, useEffect, useState, FlatList, View } from 'react';
 import { GetProductos } from "../AxiosClient"
-import { StyleSheet, Text, onChangeDate, number, TextInput, onChangeText, onChangeNumber, String, ImageBackground, Alert, Button, Card, Row,Col } from 'react-bootstrap';
-
+import { StyleSheet, Text, onChangeDate, number, TextInput, onChangeText, onChangeNumber, String, ImageBackground, Alert, Button, Card, Row,Col, Container } from 'react-bootstrap';
+import Estilos from "../Estilo/Estilos.css"
 import CardCasero from './CardCasero';
 
 function Productos() {
@@ -12,16 +12,19 @@ function Productos() {
         async function fetchData() {
             const rta = await GetProductos();
             setProducto(rta.data.products);
-            console.log("sdflksdjngfsangñdikdilgfhdudbfnidkf", producto)
-            console.log("sdflksdjngf,,,----", rta.data.products)
         }
         fetchData();
     }, []);
 
     return (
-        <Row xs={1} md={3} className="g-4">
-            {producto && producto.map(item => <Col><CardCasero key={item.id} elemento={item} /></Col>)}
-        </Row>
+             <Container>
+                <br></br>
+                   <h5>Productos destacados</h5>
+                <Row md={3}>
+                    {producto && producto.map(item => <CardCasero key={item.id} elemento={item}/>
+                    )}
+                </Row>
+            </Container>
     );
 }
 
