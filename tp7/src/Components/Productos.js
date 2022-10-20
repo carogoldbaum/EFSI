@@ -1,8 +1,8 @@
-import React, { Component, useEffect, useState, FlatList, View } from 'react';
+import React, { useEffect, useState } from 'react';
 import { GetProductos } from "../AxiosClient"
-import { StyleSheet, Text, onChangeDate, number, TextInput, onChangeText, onChangeNumber, String, ImageBackground, Alert, Button, Card, Row,Col, Container } from 'react-bootstrap';
-import Estilos from "../Estilo/Estilos.css"
+import { Row, Container } from 'react-bootstrap';
 import CardCasero from './CardCasero';
+import Estilos from "../Estilo/Estilos.css"
 
 function Productos() {
 
