@@ -4,13 +4,13 @@ import { Row, Container } from 'react-bootstrap';
 import CardCasero from './CardCasero';
 import Estilos from "../Estilo/Estilos.css"
 
-function Productos() {
-
+function Productos(props) {
     const [producto, setProducto] = useState([]);
 
     useEffect(() => {
         async function fetchData() {
-            const rta = await GetProductos();
+            
+            const rta = await GetProductos(props.Numero);
             setProducto(rta.data.products);
         }
         fetchData();

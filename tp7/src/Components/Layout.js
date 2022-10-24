@@ -2,6 +2,7 @@ import React from "react";
 import { Outlet } from 'react-router-dom';
 import NavbarCasero from './NavbarCasero';
 import FooterCasero from './FooterCasero';
+import Estilos from "../Estilo/Estilos.css"
 
 const Layout = () => {
 

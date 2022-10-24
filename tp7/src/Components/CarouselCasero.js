@@ -1,5 +1,6 @@
 import Carousel from 'react-bootstrap/Carousel';
 import slider from '../Components/slider.png';
+import Estilos from "../Estilo/Estilos.css"
 
 function CarouselCasero() {
   return (

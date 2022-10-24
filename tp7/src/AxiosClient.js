@@ -1,7 +1,11 @@
 import axios from "axios";
 
-export const GetProductos= async () =>{
-    return axios.get(`https://dummyjson.com/products?limit=6`,)
+export const GetProductos= async (Numero) =>{
+    let url=`https://dummyjson.com/products`
+    if (Numero>0) {
+        url=`https://dummyjson.com/products?limit=${Numero}`
+    }
+    return axios.get(url,)
     .then(function(res){
         return res
     })

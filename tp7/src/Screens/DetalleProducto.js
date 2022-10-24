@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { GetProductoId, GetProductos } from "../AxiosClient"
-
+import Estilos from "../Estilo/Estilos.css"
 import CardCasero from '../Components/CardCasero';
 import { Card, Container } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
@@ -25,14 +25,22 @@ console.log("resultado useeffect", producto)
           
                 <div className="card cardMod">
                     <Card style={{ width: '25.5rem' }}>
-                        <Card.Img className="imgCard" variant="top" src={producto && producto.thumbnail} />
+                        <Card.Img variant="top" src={producto && producto.thumbnail} />
                         <Card.Body>
                             <Card.Title>{producto && producto.title}</Card.Title>
                             <Card.Text>
-                                {producto && producto.description}
+                                description: {producto && producto.description}
+                                <br></br>
+                                Marca: {producto && producto.brand}
+                                <br></br>
+                                Categoria: {producto && producto.category}
+                                <br></br>
+                                Descuento: {producto && producto.discountPercentage}
+                                <br></br>
+                                Puesto: {producto && producto.rating}
                             </Card.Text>
                             <Card.Text>
-                                ${producto && producto.price}
+                               Precio: ${producto && producto.price}
                             </Card.Text>
                         </Card.Body>
                     </Card>

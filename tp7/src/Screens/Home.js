@@ -1,14 +1,16 @@
+import React from "react";
 import CarouselCasero from "../Components/CarouselCasero"
 import Productos from "../Components/Productos"
+import Estilos from "../Estilo/Estilos.css"
 
 function Home() {
 
     return (
-        //el profe dijo algo de esto
-        <>
+
+        <React.Fragment>
             <CarouselCasero></CarouselCasero>
-            <Productos></Productos>
-        </>
+            <Productos Numero={6}></Productos>
+        </React.Fragment>
     );
 }
 

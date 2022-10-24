@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../Components/logo.png';
+import Estilos from "../Estilo/Estilos.css"
 
 function NavbarCasero() {
 

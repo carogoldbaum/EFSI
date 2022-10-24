@@ -1,5 +1,6 @@
 import { Card, Container } from 'react-bootstrap';
 import { Link } from "react-router-dom";
+import Estilos from "../Estilo/Estilos.css"
 
 function CardCasero(props) {
     console.log(props.elemento)
@@ -8,9 +9,9 @@ function CardCasero(props) {
 
         <Container className='p-3'>
             <Link to={`/detalle/${props.elemento.id}`}>
-                <div className="card cardMod">
-                    <Card style={{ width: '25.5rem' }}>
-                        <Card.Img className="imgCard" variant="top" src={props.elemento.thumbnail} />
+                <div className="cardMod">
+                    <Card style={{ width: '25.13rem' }}>
+                        <Card.Img src={props.elemento.thumbnail} />
                         <Card.Body>
                             <Card.Title>{props.elemento.title}</Card.Title>
                             <Card.Text>
