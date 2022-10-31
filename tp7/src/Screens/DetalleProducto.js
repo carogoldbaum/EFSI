@@ -4,6 +4,7 @@ import Estilos from "../Estilo/Estilos.css"
 import CardCasero from '../Components/CardCasero';
 import { Card, Container } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
+import Button from 'react-bootstrap/Button';
 
 function DetalleProducto() {
     const params = useParams();
@@ -43,6 +44,7 @@ console.log("resultado useeffect", producto)
                                Precio: ${producto && producto.price}
                             </Card.Text>
                         </Card.Body>
+                        <Button type="submit">Agregar al carrito</Button>
                     </Card>
                 </div>
     

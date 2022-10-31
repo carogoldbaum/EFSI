@@ -16,6 +16,7 @@ function NavbarCasero() {
               <Nav.Link className="nav-link active" href="/QuienesSomos">QUIENES SOMOS</Nav.Link>
               <Nav.Link className="nav-link active" href="/Productos">PRODUCTOS</Nav.Link>
               <Nav.Link className="nav-link active" href="/Contacto">CONTACTO</Nav.Link>
+              <Nav.Link className="nav-link active" href="/Compra">COMPRA</Nav.Link>
           </Nav>
       </Container>
   </Navbar>
