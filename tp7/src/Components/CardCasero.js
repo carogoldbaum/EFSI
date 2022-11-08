@@ -1,9 +1,9 @@
 import { Card, Container } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 import Estilos from "../Estilo/Estilos.css"
+import PropTypes from 'prop-types';
 
 function CardCasero(props) {
-    console.log(props.elemento)
 
     return (
 
@@ -28,6 +28,16 @@ function CardCasero(props) {
 
     )
 }
+
+CardCasero.propTypes = {
+    id: PropTypes.number,
+    thumbnail: PropTypes.string,
+    title: PropTypes.string,
+    description: PropTypes.string,
+    price: PropTypes.number,
+
+}// es asi?
+
 export default CardCasero;
 
 

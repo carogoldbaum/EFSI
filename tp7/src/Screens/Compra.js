@@ -14,11 +14,12 @@ function Compra() {
     }
 
     return (
-        <View>
+        <Container>
         
-            <Text>El precio total es: {PrecioCompra}</Text>
-        
-        </View>
+            <h5>El precio total es: {PrecioCompra}</h5>
+            <h5>La cantidad de productos en el carrito es: {contextState.compra.lista.length}</h5>
+
+        </Container>
     );
 }
 

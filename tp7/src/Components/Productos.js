@@ -3,6 +3,7 @@ import { GetProductos } from "../AxiosClient"
 import { Row, Container } from 'react-bootstrap';
 import CardCasero from './CardCasero';
 import Estilos from "../Estilo/Estilos.css"
+import PropTypes from 'prop-types';
 
 function Productos(props) {
     const [producto, setProducto] = useState([]);
@@ -27,6 +28,10 @@ function Productos(props) {
             </Container>
     );
 }
+
+Productos.propTypes = {
+    Numero: PropTypes.number.isRequired,
+}// es asi?
 
 export default Productos;
 

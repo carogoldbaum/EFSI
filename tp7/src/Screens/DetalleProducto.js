@@ -23,8 +23,6 @@ function DetalleProducto() {
 
     const existeProducto = contextState.compra.lista.find(item => item.id === producto.id)
 
-    console.log("resultado existeProductos", existeProducto)
-    console.log("agregar contextstate", contextState)
     return (
 
         <Container className='p-3'>
@@ -75,7 +73,7 @@ function DetalleProducto() {
                                             value: producto,
                                         });
                                     }
-                                    }>AGREGAR DE CARRITO
+                                    }>AGREGAR AL CARRITO
                                 </Button>
                             )
                     }
