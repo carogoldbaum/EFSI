@@ -1,19 +1,24 @@
 import React from "react";
 import Estilos from "../Estilo/Estilos.css"
-import Badge from 'react-bootstrap/Badge';
 import Container from 'react-bootstrap/Container';
+import { ActionTypes, useContextState } from '../ContextState'
+import { Card, Text, View} from 'react';
 
 function Compra() {
+    let PrecioCompra = 0
+
+    const { contextState, setContextState } = useContextState();
+
+    for (let i = 0; i < contextState.compra.lista.length; i++) {
+        PrecioCompra += contextState.compra.lista[i].price
+    }
 
     return (
-        <Container>
-            <br/>
-            <h5>¿Quienes somos?</h5>
-            <h6>
-                Somos una empresa Fabricantes de Muebles con diseños modernos y clásicos. Todos nuestros productos se realizan con materia prima de alta calidad. Envios a todo el país. Atención personalizada.
-            </h6>
-            <br/>
-        </Container>
+        <View>
+        
+            <Text>El precio total es: {PrecioCompra}</Text>
+        
+        </View>
     );
 }
 

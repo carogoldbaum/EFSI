@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import logo from '../Components/logo.png';
 import Estilos from "../Estilo/Estilos.css"
+import { Link } from 'react-router-dom';
 
 function NavbarCasero() {
 
@@ -12,11 +13,11 @@ function NavbarCasero() {
       <Container>
       <img src={logo} alt="" width="114"/>
           <Nav className="ms-auto" >
-              <Nav.Link className="nav-link active" href="/Home">INICIO</Nav.Link>
-              <Nav.Link className="nav-link active" href="/QuienesSomos">QUIENES SOMOS</Nav.Link>
-              <Nav.Link className="nav-link active" href="/Productos">PRODUCTOS</Nav.Link>
-              <Nav.Link className="nav-link active" href="/Contacto">CONTACTO</Nav.Link>
-              <Nav.Link className="nav-link active" href="/Compra">COMPRA</Nav.Link>
+              <Link className="nav-link active" to="/Home">INICIO</Link>
+              <Link className="nav-link active" to="/QuienesSomos">QUIENES SOMOS</Link>
+              <Link className="nav-link active" to="/Productos">PRODUCTOS</Link>
+              <Link className="nav-link active" to="/Contacto">CONTACTO</Link>
+              <Link className="nav-link active" to="/Compra">COMPRA</Link>
           </Nav>
       </Container>
   </Navbar>

@@ -9,9 +9,12 @@ import QuienesSomos from "./Screens/QuienesSomos"
 import Contacto from "./Screens/Contacto"
 import Compra from "./Screens/Compra"
 import Estilos from "../src/Estilo/Estilos.css"
+import { ContextProvider } from './ContextState';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
+
+  <ContextProvider>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -24,4 +27,5 @@ root.render(
         </Route>
       </Routes>
     </BrowserRouter>
+    </ContextProvider>
 );

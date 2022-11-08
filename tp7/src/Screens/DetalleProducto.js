@@ -11,8 +11,6 @@ function DetalleProducto() {
     const params = useParams();
     const { contextState, setContextState } = useContextState();
 
-    console.log("parametros",params)
-
     const [producto, setProducto] = useState({});
 
     useEffect(() => {
@@ -23,11 +21,10 @@ function DetalleProducto() {
         fetchData();
     }, []);
 
-    let existeProducto = contextState.compra.lista.find(item => item.id === params)
+    const existeProducto = contextState.compra.lista.find(item => item.id === producto.id)
 
-    console.log("resultado existeProductos" ,existeProducto)
-    console.log("resultado contexstate" ,contextState)
-    console.log("resultado useeffect", producto)
+    console.log("resultado existeProductos", existeProducto)
+    console.log("agregar contextstate", contextState)
     return (
 
         <Container className='p-3'>
@@ -56,42 +53,31 @@ function DetalleProducto() {
                     {
                         existeProducto
                             ?
-                            <>
-                                <Button  style={{ fontSize: 48 }}
-                                    text="ELIMINAR"
-                                    onClick={async () => {
-                                        console.log("hay algo")
-                                        setContextState({
-                                            type: ActionTypes.SetCompraPrecio,
-                                            value: producto.price,
-                                        });
+                            (
+                                <Button
+                                    variant="danger"
+                                    onClick={() => {
                                         setContextState({
                                             type: ActionTypes.SetCompraEliminarId,
                                             value: producto.id,
-                                        });
-                                    }}
-                                />
-                            </>
-                            :
-                            <>
-                                <Button  style={{ fontSize: 48 }}
-                                    text="AGREGAR"
-                                    onClick={async () => {
-                                        console.log("hay algo0000")
-                                        setContextState({
-                                            type: ActionTypes.SetCompraPrecio,
-                                            value: producto.price,
-                                        });
+                                        })
+                                    }}>ELIMINAR DE CARRITO
+                                </Button>
+                            )
 
+                            :
+                            (
+                                <Button 
+                                 variant="success"
+                                    onClick={async () => {
                                         setContextState({
                                             type: ActionTypes.SetCompraLista,
                                             value: producto,
                                         });
-                                        console.log("agregar contextstate", contextState )
                                     }
-                                    }
-                                />
-                            </>
+                                    }>AGREGAR DE CARRITO
+                                </Button>
+                            )
                     }
 
                 </Card>
