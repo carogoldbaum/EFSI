@@ -19,7 +19,6 @@ root.render(
       <Routes>
         <Route path="/" element={<Layout />}>
         <Route path="/detalle/:Id" element={<DetalleProducto />}></Route>
-        <Route path="/Home" element={<Home />}></Route>
         <Route index element={<Home />}></Route>
         <Route path="/Productos" element={<PantallaProductos/>}></Route>
         <Route path="/QuienesSomos" element={<QuienesSomos />}></Route>
